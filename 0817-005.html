@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tab div{
+            display: none;
+            background: dodgerblue;
+            box-sizing: border-box;
+            width: 170px;
+            height: 100px;
+            padding: 15px;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            width: 170px;
+            height: 40px;
+            background: red;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+        }
+        .tab div:target{
+            display: block;
+        }
+        p{
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="tab">
+    <a href="#menu1">MENU1</a>
+    <div id="menu1">
+        <p>메뉴 1이래유~</p>
+    </div>
+    <a href="#menu2">MENU2</a>
+    <div id="menu2">
+        <p>메뉴 2래유~</p>
+    </div>
+    <a href="#menu3">MENU3</a>
+    <div id="menu3">
+            <p>메뉴 3이래유~</p>
+    </div>
+</div>
+</body>
+</html>
